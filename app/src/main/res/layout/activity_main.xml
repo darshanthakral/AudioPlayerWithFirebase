@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/audio_gallery_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/play_view" />
+
+    <ProgressBar
+        android:id="@+id/audio_gallery_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/play_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        app:cardCornerRadius="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_gradiant_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/trackName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ellipsize="marquee"
+                android:gravity="center_horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Track Name"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/white" />
+
+                <SeekBar
+                    android:id="@+id/song_timeline"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:progressBackgroundTint="@color/white"
+                    android:thumbTint="@color/white" />
+
+                <TextView
+                    android:id="@+id/totalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/previous_song_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:borderWidth="0dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="TODO"
+                    android:onClick="prevSongButton"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                    app:maxImageSize="30dp"
+                    app:fabCustomSize="50dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/play_pause_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:borderWidth="0dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="TODO"
+                    android:onClick="songPlayPauseButton"
+                    android:src="@drawable/ic_baseline_pause_24"
+                    app:maxImageSize="30dp"
+                    app:fabCustomSize="50dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/forward_song_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:borderWidth="0dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="TODO"
+                    android:onClick="nextSongButton"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:maxImageSize="30dp"
+                    app:fabCustomSize="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

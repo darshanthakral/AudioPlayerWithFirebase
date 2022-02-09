@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21875" />
+        <entry key="app/src/main/res/drawable/card_gradiant_bg.xml" value="0.2224755700325733" />
+        <entry key="app/src/main/res/drawable/custom_bg.xml" value="0.19652777777777777" />
+        <entry key="app/src/main/res/drawable/custom_bg_color_default.xml" value="0.12006578947368421" />
+        <entry key="app/src/main/res/drawable/custom_bg_color_playing.xml" value="0.12006578947368421" />
+        <entry key="app/src/main/res/drawable/custom_item_back_color_default.xml" value="0.19652777777777777" />
+        <entry key="app/src/main/res/drawable/custom_item_back_color_playing.xml" value="0.19652777777777777" />
+        <entry key="app/src/main/res/drawable/custom_item_back_coontainer.xml" value="0.19652777777777777" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.22280130293159608" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.21875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.21875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.16416938110749185" />
+        <entry key="app/src/main/res/drawable/ic_baseline_replay_24.xml" value="0.21875" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/layout_bg_transparent.xml" value="0.2224755700325733" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/audio_items.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
